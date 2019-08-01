@@ -6,6 +6,6 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/maste
 git clone https://github.com/adriandole/configs.git
 cd configs
 cp ./.tmux.conf ~
-#cp ./.zshrc ~
+cp ./.zshrc ~
 
-chsh -s /bin/zsh
+chsh -s /usr/bin/zsh $USER
