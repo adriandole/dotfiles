@@ -97,3 +97,29 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Save history
+HISTFILE=~/.zsh_history
+HISTSIZE=100000
+SAVEHIST=100000
+#setopt no_share_history
+setopt sharehistory
+
+bindkey "^[[A" up-line-or-local-history
+bindkey "^[[B" down-line-or-local-history
+
+bindkey "^[[1;5A" up-line-or-history
+bindkey "^[[1;5B" down-line-or-history
+
+up-line-or-local-history() {
+    zle set-local-history 1
+    zle up-line-or-history
+    zle set-local-history 0
+}
+zle -N up-line-or-local-history
+down-line-or-local-history() {
+    zle set-local-history 1
+    zle down-line-or-history
+    zle set-local-history 0
+}
+zle -N down-line-or-local-history

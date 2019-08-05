@@ -9,3 +9,4 @@ cp ./.tmux.conf ~
 cp ./.zshrc ~
 
 chsh -s /usr/bin/zsh $USER
+chmod 777 ~/.zsh_history
