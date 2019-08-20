@@ -10,4 +10,4 @@ set background=dark
 colorscheme solarized
 
 " Remap esc key
-imap jj <Esc>
+inoremap jj <Esc>
