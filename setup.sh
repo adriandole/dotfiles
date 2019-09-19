@@ -26,3 +26,6 @@ mkdir -p ~/.vim/colors
 mv solarized.vim ~/.vim/colors
 cd ../..
 rm -rf vim-colors-solarized
+
+# Vundle install
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
