@@ -123,3 +123,8 @@ down-line-or-local-history() {
     zle set-local-history 0
 }
 zle -N down-line-or-local-history
+
+# Source local version if exists
+if [ -f ~/.zshrc.local ]; then
+    source ~/.zshrc.local
+fi
