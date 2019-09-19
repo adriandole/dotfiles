@@ -6,8 +6,10 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'VundleVim/Vundle.vim'
 " Plugins below
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'vim-python/python-syntax'
+Plugin 'tpope/vim-surround'
 
 call vundle#end()
 
