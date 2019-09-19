@@ -29,8 +29,8 @@ inoremap df <Esc>
 
 " Leader and better newline commands
 let mapleader=" "
-nnoremap <Leader>o o<Esc>
-nnoremap <Leader>O O<Esc>
+nnoremap <Leader>ij o<Esc>
+nnoremap <Leader>ik O<Esc>
 
 " Source file only if it exists
 function! SourceIfExists(file)
