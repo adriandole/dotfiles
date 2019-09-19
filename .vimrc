@@ -25,7 +25,7 @@ set background=dark
 colorscheme solarized
 
 " Remap esc key
-inoremap jj <Esc>
+inoremap df <Esc>
 
 " Leader and better newline commands
 let mapleader=" "
