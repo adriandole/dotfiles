@@ -1,19 +1,20 @@
 #!/usr/bin/env bash
 
 # Dependency installation
-apt install zsh tmux fonts-powerline
+apt install zsh tmux fonts-powerline emacs
 sh -c "$(wget -O- https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Clone my configs and remove defaults
 git clone https://github.com/adriandole/configs.git
 cd configs
-rm ~/.zshrc ~/.tmux.conf ~/.vimrc
+rm ~/.zshrc ~/.tmux.conf ~/.vimrc ~/.spacemacs
 
 # Create symlinks to my configs
 cd ~
 ln -s configs/.zsrhc .zshrc
 ln -s configs/.tmux.conf .tmux.conf
-ls -s configs/.vimrc .vimrc
+ln -s configs/.vimrc .vimrc
+ln -s configs/.spacemacs .spacemacs
 
 # Change shell and fix zsh history
 chsh -s /usr/bin/zsh $USER
@@ -29,3 +30,6 @@ rm -rf vim-colors-solarized
 
 # Vundle install
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+# Spacemacs install
+git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
