@@ -32,4 +32,4 @@ rm -rf vim-colors-solarized
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # Spacemacs install
-git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+git clone -b develop https://github.com/syl20bnr/spacemacs ~/.emacs.d
