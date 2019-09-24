@@ -31,6 +31,8 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
+   '(javascript
+     vimscript
      python
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
