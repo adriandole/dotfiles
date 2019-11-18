@@ -127,6 +127,11 @@ down-line-or-local-history() {
 }
 zle -N down-line-or-local-history
 
+cdl() {
+    cd $1
+    ls
+}
+
 # Source local version if exists
 if [ -f ~/.zshrc.local ]; then
     source ~/.zshrc.local
