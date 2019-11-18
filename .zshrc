@@ -98,6 +98,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+DEFAULT_USER=adriandole
+prompt_context() {}
+
 # Save history
 HISTFILE=~/.zsh_history
 HISTSIZE=100000
