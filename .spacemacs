@@ -30,8 +30,8 @@ values."
    dotspacemacs-configuration-layer-path '()
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
-   '(
-   '(javascript
+   '(markdown
+     javascript
      vimscript
      python
      ;; ----------------------------------------------------------------
@@ -322,6 +322,7 @@ you should place your code here."
    TeX-view-program-list '(("PDF Tools" TeX-pdf-tools-sync-view))
    TeX-source-correlate-start-server t)
   )
+  (setq shell-default-shell 'eshell)
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.

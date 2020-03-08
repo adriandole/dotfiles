@@ -99,6 +99,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+DEFAULT_USER=adriandole
+prompt_context() {}
+
 # Save history
 HISTFILE=~/.zsh_history
 HISTSIZE=100000
@@ -124,6 +127,11 @@ down-line-or-local-history() {
     zle set-local-history 0
 }
 zle -N down-line-or-local-history
+
+cdl() {
+    cd $1
+    ls
+}
 
 # Source local version if exists
 if [ -f ~/.zshrc.local ]; then
