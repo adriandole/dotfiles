@@ -32,6 +32,9 @@ let mapleader=" "
 nnoremap <Leader>ij o<Esc>
 nnoremap <Leader>ik O<Esc>
 
+" Semicolon command
+nnoremap ; A;<Esc>
+
 " Source file only if it exists
 function! SourceIfExists(file)
     if filereadable(expand(a:file))
