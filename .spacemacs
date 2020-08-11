@@ -333,6 +333,8 @@ you should place your code here."
   (with-eval-after-load 'evil-maps
   (define-key evil-normal-state-map (kbd ";") 'bb-semicolon))
 
+  (spacemacs/set-leader-keys "op" 'projectile-add-known-project)
+
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
 (custom-set-variables
