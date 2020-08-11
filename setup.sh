@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 # Dependency installation
-apt install zsh tmux fonts-powerline emacs
-sh -c "$(wget -O- https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sudo apt-add-repository ppa:fish-shell/release-3
+sudo apt install tmux fonts-powerline fish
 
 # Clone my configs and remove defaults
 git clone https://github.com/adriandole/configs.git
@@ -11,13 +11,12 @@ rm ~/.zshrc ~/.tmux.conf ~/.vimrc ~/.spacemacs
 
 # Create symlinks to my configs
 cd ~
-ln -s configs/.zsrhc .zshrc
 ln -s configs/.tmux.conf .tmux.conf
 ln -s configs/.vimrc .vimrc
 ln -s configs/.spacemacs .spacemacs
 
 # Change shell and fix zsh history
-chsh -s /usr/bin/zsh $USER
+chsh -s /usr/bin/fish $USER
 chmod 777 ~/.zsh_history
 
 # Solarized color scheme for vim
@@ -33,3 +32,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # Spacemacs install
 git clone -b develop https://github.com/syl20bnr/spacemacs ~/.emacs.d
+
+# Fish tools
+omf install spacefish
+omf install bass
