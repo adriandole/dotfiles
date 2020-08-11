@@ -30,7 +30,12 @@ values."
    dotspacemacs-configuration-layer-path '()
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
-   '(yaml
+   '(
+     auto-completion
+     (haskell :variables
+              haskell-completion-backend 'lsp)
+     lsp
+     yaml
      markdown
      javascript
      vimscript
@@ -41,7 +46,6 @@ values."
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      helm
-     auto-completion
      ;; better-defaults
      emacs-lisp
      latex
@@ -317,13 +321,12 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (setq-default
    evil-escape-delay 0.2
-   evil-escape-unordered-key-sequence "true"
-  )
+   evil-escape-unordered-key-sequence "true")
+
   (setq TeX-view-program-selection '((output-pdf "PDF Tools"))
    TeX-view-program-list '(("PDF Tools" TeX-pdf-tools-sync-view))
-   TeX-source-correlate-start-server t)
-  )
-  (setq shell-default-shell 'eshell)
+   TeX-source-correlate-start-server t))
+
   (defun bb-semicolon ()
     (interactive)
     (save-excursion
@@ -334,6 +337,9 @@ you should place your code here."
   (define-key evil-normal-state-map (kbd ";") 'bb-semicolon))
 
   (spacemacs/set-leader-keys "op" 'projectile-add-known-project)
+
+  (setq-default dotspacemacs-configuration-layers
+    '((auto-completion-enable-help-tooltip 'manual)))
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
