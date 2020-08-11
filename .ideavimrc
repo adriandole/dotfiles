@@ -2,3 +2,4 @@ inoremap df <Esc>
 let mapleader=" "
 nnoremap <Leader>ij o<Esc>
 nnoremap <Leader>ik O<Esc>
+nnoremap ; A;<Esc>
