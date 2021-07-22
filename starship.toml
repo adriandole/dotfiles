@@ -1,5 +1,5 @@
 [character]
-symbol = "λ"
+success_symbol = "λ"
 
 [directory]
 truncation_length = 5
