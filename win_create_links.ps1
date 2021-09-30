@@ -8,3 +8,6 @@ New-Item -Path $ideaPath -ItemType SymbolicLink -Value .\.ideavimrc -Force
 
 $emacsPath = $HOME+"\AppData\Roaming\.emacs.d\init.el"
 New-Item -Path $emacsPath -ItemType SymbolicLink -Value .\init.el -Force
+
+$nvimPath = $HOME+"\AppData\Local\nvim\init.lua"
+New-Item -Path $nvimPath -ItemType SymbolicLink -Value .\init.lua -Force
