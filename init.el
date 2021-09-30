@@ -44,6 +44,7 @@
 
 ;; LSP
 (require 'lsp-mode)
+(add-hook 'after-init-hook 'global-company-mode)
 
 ;; Projectile
 (projectile-mode +1)

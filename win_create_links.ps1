@@ -7,4 +7,4 @@ $ideaPath = $HOME+"\.ideavimrc"
 New-Item -Path $ideaPath -ItemType SymbolicLink -Value .\.ideavimrc -Force
 
 $emacsPath = $HOME+"\AppData\Roaming\.emacs.d\init.el"
-New-Item -Path $emacsPath -ItemType SymbolicLink -Value .\init.el
+New-Item -Path $emacsPath -ItemType SymbolicLink -Value .\init.el -Force
