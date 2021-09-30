@@ -4,6 +4,7 @@
 Install and setup WSL
 
 [Install Cascadia code font](https://github.com/microsoft/cascadia-code) (relevant one is 'Cascadia Code PL')
+ - [Or 'Caskaydia Cove' nerd font version](https://www.nerdfonts.com/font-downloads)
 
 [Install Windows terminal](https://github.com/microsoft/terminal)
  - Go to 'Settings - Open JSON file' and paste contents of `windows_terminal.settings.json`
