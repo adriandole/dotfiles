@@ -11,14 +11,14 @@ rm ~/.zshrc ~/.tmux.conf ~/.vimrc ~/.spacemacs
 
 # Create symlinks to my configs
 cd ~
-ln -s configs/.tmux.conf .tmux.conf
-ln -s configs/.vimrc .vimrc
-ln -s configs/.spacemacs .spacemacs
-ln -s configs/.ideavimrc .ideavimrc
+ln -s ~/configs/.tmux.conf .tmux.conf
+ln -s ~/configs/.vimrc .vimrc
+ln -s ~/configs/.spacemacs .spacemacs
+ln -s ~/configs/.ideavimrc .ideavimrc
 
 mkdir -p ~/.config/fish
-ln -s configs/config.fish ~/.config/fish/config.fish
-ln -s configs/starship.toml ~/.config/starship.toml
+ln -s ~/configs/config.fish ~/.config/fish/config.fish
+ln -s ~/configs/starship.toml ~/.config/starship.toml
 
 mkdir -p ~/.config/nvim
 ln -s configs/init.lua ~/.config/nvim/init.lua
