@@ -12,10 +12,15 @@ Install and setup WSL
 [Install Choco](https://chocolatey.org/install)
 
 Install fish shell:
+Ubuntu:
 1. `sudo apt-add-repository ppa:fish-shell/release-3`
 2. `sudo apt-get update`
 3. `sudo apt-get install fish`
-4. Change default: ``chsh -s `which fish` ``
+
+Arch:
+1. `pacman -S fish`
+
+Change default: ``chsh -s `which fish` ``
 
 Install Starship
  - Windows - `choco install starship`
