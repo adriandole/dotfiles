@@ -12,9 +12,20 @@ if fn.empty(fn.glob(install_path)) > 0 then
   vim.cmd 'packadd packer.nvim'
 end
 
-local use = require('packer').use
-require('packer').startup(function()
-  use 'shaunsingh/nord.nvim'
+-- :PackerSync to sync plugins
+require('packer').startup(function(use)
+  -- My plugins here
+  -- use 'foo1/bar1.nvim'
+  -- use 'foo2/bar2.nvim'
+  use 'folke/tokyonight.nvim'
+
+  -- Automatically set up your configuration after cloning packer.nvim
+  -- Put this at the end after all plugins
+  if packer_bootstrap then
+    require('packer').sync()
+  end
 end)
 
-require('nord').set()
+-- Configure scheme before setting
+vim.g.tokyonight_style = "night"
+vim.cmd[[colorscheme tokyonight]]

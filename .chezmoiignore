@@ -1,0 +1,6 @@
+*.ps1
+README.md
+init.el
+setup.sh
+windows_terminal.settings.json
+

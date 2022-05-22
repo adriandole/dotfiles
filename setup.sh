@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-# Dependency installation
-sudo apt-add-repository ppa:fish-shell/release-3
-sudo apt install tmux fonts-powerline fish
-
 # Clone my configs and remove defaults
 git clone https://github.com/adriandole/configs.git
 cd configs
