@@ -9,8 +9,8 @@ function assemble
     ld {$argv}.o -o {$argv}
 end
 
-if test -f $HOME/.config.fish.local
-    source $HOME/.config.fish.local
+if test -f $HOME/local_config.fish
+    source $HOME/local_config.fish
 end
 
 starship init fish | source
