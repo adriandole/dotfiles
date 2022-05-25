@@ -13,7 +13,10 @@ if test -f $HOME/local_config.fish
     source $HOME/local_config.fish
 end
 
+set fish_key_bindings fish_user_key_bindings
+
 starship init fish | source
+fzf_configure_bindings
 
 # ghcup-env
 set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME
