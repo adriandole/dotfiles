@@ -3,15 +3,15 @@
 ## Setup
 Install and setup WSL
 
-[Install Cascadia code font](https://github.com/microsoft/cascadia-code) (relevant one is 'Cascadia Code PL')
+[Cascadia code font](https://github.com/microsoft/cascadia-code) (relevant one is 'Cascadia Code PL')
  - [Or 'Caskaydia Cove' nerd font version](https://www.nerdfonts.com/font-downloads)
 
-[Install Windows terminal](https://github.com/microsoft/terminal)
+[Windows terminal](https://github.com/microsoft/terminal)
  - Go to 'Settings - Open JSON file' and paste contents of `windows_terminal.settings.json`
 
-[Install Choco](https://chocolatey.org/install)
+[Choco](https://chocolatey.org/install)
 
-Install fish shell:
+fish shell:
 Ubuntu:
 1. `sudo apt-add-repository ppa:fish-shell/release-3`
 2. `sudo apt-get update`
@@ -21,6 +21,9 @@ Arch:
 1. `pacman -S fish`
 
 Change default: ``chsh -s `which fish` ``
+
+[fzf](https://github.com/junegunn/fzf), [fd](https://github.com/sharkdp/fd), [bat](https://github.com/sharkdp/bat),
+[fisher](https://github.com/jorgebucaran/fisher), ([fzf.fish](https://github.com/PatrickF1/fzf.fish),
 
 Install Starship
  - Windows - `choco install starship`
