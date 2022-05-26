@@ -7,6 +7,12 @@ set expandtab
 " Remap esc key
 inoremap df <Esc>
 
+" Better window navigation
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
 " Leader and better newline commands
 let mapleader=" "
 nnoremap <Leader>ij o<Esc>
