@@ -21,9 +21,10 @@ Arch:
 1. `pacman -S fish`
 
 Change default: ``chsh -s `which fish` ``
+Change just in tmux: `set-option -g default-shell /usr/bin/fish` (or output of `which fish` if elsewhere)
 
 [fzf](https://github.com/junegunn/fzf), [fd](https://github.com/sharkdp/fd), [bat](https://github.com/sharkdp/bat),
-[fisher](https://github.com/jorgebucaran/fisher), ([fzf.fish](https://github.com/PatrickF1/fzf.fish),
+[fisher](https://github.com/jorgebucaran/fisher), [fzf.fish](https://github.com/PatrickF1/fzf.fish), [ripgrep](https://github.com/BurntSushi/ripgrep)
 
 Install Starship
  - Windows - `choco install starship`
