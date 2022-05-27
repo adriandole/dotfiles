@@ -15,6 +15,8 @@ end
 
 set fish_key_bindings fish_user_key_bindings
 
+function fish_vi_cursor; end
+
 starship init fish | source
 fzf_configure_bindings
 
