@@ -30,3 +30,6 @@ endfunction
 
 " Local-only vimrc
 call SourceIfExists("~/.vimrc.local")
+
+" Fix mouse issues with some terminals
+ttymouse=sgr
