@@ -27,7 +27,3 @@ end
 function light
   sed -i'' -e 's/\*dark/\*light/g' ~/.config/alacritty/alacritty.yml
 end
-
-# ghcup-env
-set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME
-test -f /home/adriandole/.ghcup/env ; and set -gx PATH $HOME/.cabal/bin /home/adriandole/.ghcup/bin $PATH
