@@ -17,8 +17,6 @@ font:
     family: CaskaydiaCove Nerd Font
     style: Bold Italic
 
-  use_thin_strokes: true
-
 schemes:
   solarized_light: &light
     primary:
