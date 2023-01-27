@@ -1,0 +1,5 @@
+[user]
+	name = Adrian Dole
+	email = adrian@dole.tech
+[core]
+	editor = nvim
