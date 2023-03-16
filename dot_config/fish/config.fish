@@ -17,3 +17,5 @@ end
 function light
   sed -i'' -e 's/\*dark/\*light/g' ~/.config/alacritty/alacritty.yml
 end
+
+set EDITOR nvim
