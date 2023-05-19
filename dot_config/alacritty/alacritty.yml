@@ -3,7 +3,7 @@ window:
     x: 5
 
 font:
-  size: 12
+  size: 10
 
   normal:
     family: CaskaydiaCove Nerd Font
@@ -16,6 +16,9 @@ font:
   bold_italic:
     family: CaskaydiaCove Nerd Font
     style: Bold Italic
+
+shell:
+  program: /usr/bin/tmux
 
 schemes:
   solarized_light: &light
